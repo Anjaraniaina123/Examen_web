@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    background-color: #1c2a3a;
+  }
+
+
+  
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+
+}
+
+.menu{
+    display: flex;
+}
+.logo{
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 25px;
+}
+.logo span{
+    color: #1c2a3a;
+}
+.menu li{
+    margin: 0 15px;
+    list-style: none;
+}
+.menu li a{
+    font-size: 20px;
+    text-decoration: 0;
+    color: #1c2a3a;
+    position: relative;
+}
+.menu li a::before{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::before{
+    width: 100%;
+    
+}
+.menu li a::after{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width:  0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::after{
+    width: 100%;
+}
+.menu li a:hover{
+    color: #000;
+}
+  
+  .container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 40px 30px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #ccc;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3f3f3f;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  
+  .message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff8080;
+  }

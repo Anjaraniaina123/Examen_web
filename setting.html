@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="setting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Settings</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p><span>Typing</span>Test</p>
+        </div>
+            <ul class="menu">
+                <li><a href="index.html">Login</a></li>
+                <li><a href="test.html">Test</a></li>
+                <li><a href="setting.html">Settings</a></li>
+            </ul>
+
+    </nav>
+
+
+    <div class="container">
+        <header class="header">
+            
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </header>
+
+        <div class="settings-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="general">Général</button>
+                <button class="tab-btn" data-tab="theme">Thème</button>
+                <button class="tab-btn" data-tab="keyboard">Clavier</button>
+                <button class="tab-btn" data-tab="sound">Son</button>
+            </div>
+
+            <div class="tab-content active" id="general">
+                <div class="setting-item">
+                    <label for="language">Langue:</label>
+                    <select id="language">
+                        <option value="french">Français</option>
+                        <option value="english">Anglais</option>
+                        <option value="spanish">Espagnol</option>
+                        <option value="german">Allemand</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="time-mode">Mode de temps:</label>
+                    <select id="time-mode">
+                        <option value="15">15 secondes</option>
+                        <option value="30">30 secondes</option>
+                        <option value="60">1 minute</option>
+                        <option value="120">2 minutes</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="word-count">Nombre de mots:</label>
+                    <select id="word-count">
+                        <option value="10">10 mots</option>
+                        <option value="25">25 mots</option>
+                        <option value="50">50 mots</option>
+                        <option value="100">100 mots</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="difficulty">Difficulté:</label>
+                    <select id="difficulty">
+                        <option value="easy">Facile</option>
+                        <option value="medium">Moyen</option>
+                        <option value="hard">Difficile</option>
+                        <option value="expert">Expert</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="tab-content" id="theme">
+                <div class="setting-item">
+                    <label for="theme-select">Thème:</label>
+                    <select id="theme-select">
+                        <option value="light">Clair</option>
+                        <option value="dark">Sombre</option>
+                        <option value="solarized">Solarisé</option>
+                        <option value="monokai">Monokai</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="custom-color">Couleur personnalisée:</label>
+                    <input type="color" id="custom-color" value="#ff5e5e">
+                </div>
+
+                <div class="theme-preview">
+                    <div class="preview-text">
+                        <span class="correct">Bonjour</span>
+                        <span class="incorrect">le</span>
+                        <span class="current">monde</span>
+                        <span>!</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="keyboard">
+                <div class="setting-item">
+                    <label for="keyboard-layout">Disposition du clavier:</label>
+                    <select id="keyboard-layout">
+                        <option value="azerty">AZERTY</option>
+                        <option value="qwerty">QWERTY</option>
+                        <option value="qwertz">QWERTZ</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="show-keyboard">
+                        Afficher le clavier à l'écran
+                    </label>
+                </div>
+
+                <div class="keyboard-preview">
+                    <div class="keyboard-row">
+                        <div class="key">A</div>
+                        <div class="key">Z</div>
+                        <div class="key">E</div>
+                        <div class="key">R</div>
+                        <div class="key">T</div>
+                        <div class="key">Y</div>
+                        <div class="key">U</div>
+                        <div class="key">I</div>
+                        <div class="key">O</div>
+                        <div class="key">P</div>
+                    </div>
+                    <div class="keyboard-row">
+                        <div class="key">Q</div>
+                        <div class="key">S</div>
+                        <div class="key">D</div>
+                        <div class="key">F</div>
+                        <div class="key">G</div>
+                        <div class="key">H</div>
+                        <div class="key">J</div>
+                        <div class="key">K</div>
+                        <div class="key">L</div>
+                        <div class="key">M</div>
+                    </div>
+                    <div class="keyboard-row">
+                        <div class="key">W</div>
+                        <div class="key">X</div>
+                        <div class="key">C</div>
+                        <div class="key">V</div>
+                        <div class="key">B</div>
+                        <div class="key">N</div>
+                        <div class="key">,</div>
+                        <div class="key">;</div>
+                        <div class="key">:</div>
+                        <div class="key">!</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="sound">
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="sound-on" checked>
+                        Activer les sons
+                    </label>
+                </div>
+
+                <div class="setting-item">
+                    <label for="sound-volume">Volume:</label>
+                    <input type="range" id="sound-volume" min="0" max="100" value="50">
+                    <span id="volume-value">50%</span>
+                </div>
+
+                <div class="setting-item">
+                    <label for="sound-type">Type de son:</label>
+                    <select id="sound-type">
+                        <option value="click">Clic</option>
+                        <option value="mechanical">Mécanique</option>
+                        <option value="bubble">Bulle</option>
+                        <option value="none">Aucun</option>
+                    </select>
+                </div>
+
+                <button id="test-sound" class="btn">Tester le son</button>
+            </div>
+
+            <div class="actions">
+                <button id="reset-btn" class="btn btn-secondary">Réinitialiser</button>
+                <button id="save-btn" class="btn btn-primary">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="setting.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Settings</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p><span>Typing</span>Test</p>
+        </div>
+            <ul class="menu">
+                <li><a href="index.html">Login</a></li>
+                <li><a href="test.html">Test</a></li>
+                <li><a href="setting.html">Settings</a></li>
+            </ul>
+
+    </nav>
+
+    <div class="container">
+        <form class="login-form" id="registerForm">
+          <h2>Créer un compte</h2>
+    
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Nom" id="lastname" required />
+          </div>
+    
+          <div class="input-group">
+            <i class="fa-solid fa-circle-user"></i>
+            <input type="text" placeholder="Prénom" id="firstname" required />
+          </div>
+    
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" id="email" required />
+          </div>
+    
+          <div class="input-group">
+            <i class="fas fa-calendar-alt"></i>
+            <input type="date" id="dob" required />
+          </div>
+    
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Mot de passe" id="password" required />
+          </div>
+    
+          <button type="submit">S'inscrire</button>
+          <p class="message" id="message"></p>
+        </form>
+      </div>
+    
+      <script src="script.js"></script>
+</body>
+</html>
