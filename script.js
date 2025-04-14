@@ -10,12 +10,6 @@ form.addEventListener('submit', (e) => {
   const dob = document.getElementById('dob').value;
   const password = document.getElementById('password').value;
 
-  // if (!nom || !prenom || !email || !dob || !password) {
-  //   message.textContent = "Veuillez remplir tous les champs.";
-  //   message.style.color = "red";
-  //   return;
-  // }
-
   message.style.color = "lightgreen";
   message.textContent = "Inscription réussie ! Redirection...";
   

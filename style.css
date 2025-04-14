@@ -111,7 +111,7 @@ nav{
     position: absolute;
     top: 12px;
     left: 12px;
-    color: #ccc;
+    color: #ffffff;
   }
   
   .input-group input {
@@ -119,8 +119,8 @@ nav{
     padding: 12px 12px 12px 40px;
     border: none;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
+    background: rgba(255, 255, 255, 0.2);;
+    color: whitesmoke;;
     font-size: 14px;
     transition: 0.3s ease;
   }
@@ -130,23 +130,96 @@ nav{
     background: rgba(255, 255, 255, 0.2);
   }
   
-  button {
-    width: 100%;
-    padding: 12px;
+.btn{
+    padding: 1px 2rem;
+    margin-left: 70px;
     background-color: #3f3f3f;
+    color: whitesmoke;
+    border-radius: 40px;
+    font-size: 30px;
+    position: relative;
+    top: 20px;
     border: none;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
     cursor: pointer;
-    transition: 0.2s ease;
-  }
+}
 
-  
-  .message {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #ff8080;
-  }
+.btn:hover{
+    background: linear-gradient(90deg,#1c2a3a,#27ae60,#f100d1, #ff5616,#3f3f3f);
+    background-size: 500%;
+    z-index: 1;
+    animation: blink 7s linear infinite;
+    
+}   
+@keyframes blink{
+    form{
+        background-position: 0%;
+    }
+    to{
+        background-position: 500%;
+    }
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: 20px;
+    background: inherit;
+    border-radius: 40px;
+    filter: blur(50px);
+    opacity: 0;
+}
+.btn:hover::after{
+    opacity: 1px;
+    z-index: index -1 ;
+
+}
+
+.input-group i {
+    transition: transform 0.3s ease;
+}
+
+.input-group:hover i {
+    transform: scale(1.2) rotate(10deg);
+    color: #27ae60;
+}
+
+.input-group input {
+    transition: all 0.3s ease;
+}
+
+.input-group:hover input {
+    transform: translateX(5px);
+    box-shadow: 0 0 10px rgba(39, 174, 96, 0.5);
+}
+
+
+.login-form h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.login-form h2::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #27ae60;
+    transition: width 0.5s ease;
+}
+
+.login-form:hover h2::after {
+    width: 100%;
+}
+
+.container {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}

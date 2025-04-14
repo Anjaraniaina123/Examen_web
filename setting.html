@@ -33,49 +33,49 @@
 
         <div class="settings-container">
             <div class="tabs">
-                <button class="tab-btn active" data-tab="general">Général</button>
-                <button class="tab-btn" data-tab="theme">Thème</button>
-                <button class="tab-btn" data-tab="keyboard">Clavier</button>
-                <button class="tab-btn" data-tab="sound">Son</button>
+                <button class="tab-btn active" data-tab="general">General</button>
+                <button class="tab-btn" data-tab="theme">Theme</button>
+                <button class="tab-btn" data-tab="keyboard">Keyboard</button>
+                <button class="tab-btn" data-tab="sound">Sound</button>
             </div>
 
             <div class="tab-content active" id="general">
                 <div class="setting-item">
-                    <label for="language">Langue:</label>
+                    <label for="language">Language:</label>
                     <select id="language">
-                        <option value="french">Français</option>
-                        <option value="english">Anglais</option>
-                        <option value="spanish">Espagnol</option>
-                        <option value="german">Allemand</option>
+                        <option value="french">French</option>
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="german">German</option>
                     </select>
                 </div>
 
                 <div class="setting-item">
-                    <label for="time-mode">Mode de temps:</label>
+                    <label for="time-mode">Time mode:</label>
                     <select id="time-mode">
-                        <option value="15">15 secondes</option>
-                        <option value="30">30 secondes</option>
+                        <option value="15">15 seconds</option>
+                        <option value="30">30 seconds</option>
                         <option value="60">1 minute</option>
                         <option value="120">2 minutes</option>
                     </select>
                 </div>
 
                 <div class="setting-item">
-                    <label for="word-count">Nombre de mots:</label>
+                    <label for="word-count">Word count:</label>
                     <select id="word-count">
-                        <option value="10">10 mots</option>
-                        <option value="25">25 mots</option>
-                        <option value="50">50 mots</option>
-                        <option value="100">100 mots</option>
+                        <option value="10">10 words</option>
+                        <option value="25">25 words</option>
+                        <option value="50">50 words</option>
+                        <option value="100">100 words</option>
                     </select>
                 </div>
 
                 <div class="setting-item">
-                    <label for="difficulty">Difficulté:</label>
+                    <label for="difficulty">Difficulty:</label>
                     <select id="difficulty">
-                        <option value="easy">Facile</option>
-                        <option value="medium">Moyen</option>
-                        <option value="hard">Difficile</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
                         <option value="expert">Expert</option>
                     </select>
                 </div>
@@ -83,25 +83,25 @@
 
             <div class="tab-content" id="theme">
                 <div class="setting-item">
-                    <label for="theme-select">Thème:</label>
+                    <label for="theme-select">Theme:</label>
                     <select id="theme-select">
-                        <option value="light">Clair</option>
-                        <option value="dark">Sombre</option>
-                        <option value="solarized">Solarisé</option>
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="solarized">Solarized</option>
                         <option value="monokai">Monokai</option>
                     </select>
                 </div>
 
                 <div class="setting-item">
-                    <label for="custom-color">Couleur personnalisée:</label>
+                    <label for="custom-color">Custom color:</label>
                     <input type="color" id="custom-color" value="#ff5e5e">
                 </div>
 
                 <div class="theme-preview">
                     <div class="preview-text">
-                        <span class="correct">Bonjour</span>
-                        <span class="incorrect">le</span>
-                        <span class="current">monde</span>
+                        <span class="correct">Are</span>
+                        <span class="incorrect">you</span>
+                        <span class="current">fine</span>
                         <span>!</span>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
 
             <div class="tab-content" id="keyboard">
                 <div class="setting-item">
-                    <label for="keyboard-layout">Disposition du clavier:</label>
+                    <label for="keyboard-layout">Keyboard layout:</label>
                     <select id="keyboard-layout">
                         <option value="azerty">AZERTY</option>
                         <option value="qwerty">QWERTY</option>
@@ -120,7 +120,7 @@
                 <div class="setting-item">
                     <label>
                         <input type="checkbox" id="show-keyboard">
-                        Afficher le clavier à l'écran
+                        Show keyboard
                     </label>
                 </div>
 
@@ -168,32 +168,32 @@
                 <div class="setting-item">
                     <label>
                         <input type="checkbox" id="sound-on" checked>
-                        Activer les sons
+                        Sound on
                     </label>
                 </div>
 
                 <div class="setting-item">
-                    <label for="sound-volume">Volume:</label>
+                    <label for="sound-volume">Sound volume:</label>
                     <input type="range" id="sound-volume" min="0" max="100" value="50">
                     <span id="volume-value">50%</span>
                 </div>
 
                 <div class="setting-item">
-                    <label for="sound-type">Type de son:</label>
+                    <label for="sound-type">Sound type:</label>
                     <select id="sound-type">
-                        <option value="click">Clic</option>
-                        <option value="mechanical">Mécanique</option>
-                        <option value="bubble">Bulle</option>
-                        <option value="none">Aucun</option>
+                        <option value="click">Click</option>
+                        <option value="mechanical">Mechanical</option>
+                        <option value="bubble">Bubble</option>
+                        <option value="none">None</option>
                     </select>
                 </div>
 
-                <button id="test-sound" class="btn">Tester le son</button>
+                <button id="test-sound" class="btn">Test sound</button>
             </div>
 
             <div class="actions">
-                <button id="reset-btn" class="btn btn-secondary">Réinitialiser</button>
-                <button id="save-btn" class="btn btn-primary">Enregistrer</button>
+                <button id="reset-btn" class="btn btn-secondary">Reset</button>
+                <button id="save-btn" class="btn btn-primary">Save</button>
             </div>
         </div>
     </div>
