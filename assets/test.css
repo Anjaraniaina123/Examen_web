@@ -11,6 +11,77 @@ body{
     color: aliceblue;
 }
 
+nav{
+    color: #1c2a3a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+
+}
+
+.logo{
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 25px;
+}
+.logo span{
+    color: #1c2a3a;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin: 0 15px;
+    list-style: none;
+}
+.menu li a{
+    font-size: 20px;
+    text-decoration: 0;
+    color: #1c2a3a;
+    position: relative;
+}
+.menu li a::before{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::before{
+    width: 100%;
+    
+}
+.menu li a::after{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width:  0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::after{
+    width: 100%;
+}
+.menu li a:hover{
+    color: #000;
+}
+
 
 .test-container {
     max-width: 800px;

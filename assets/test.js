@@ -5,6 +5,16 @@
  * 
  * Sur ce... Amusez-vous bien ! 
  */
+
+let startTime = null, previousEndTime = null;
+let currentWordIndex = 0;
+const wordsToType = [];
+
+const modeSelect = document.getElementById("mode");
+const wordDisplay = document.getElementById("word-display");
+const inputField = document.getElementById("input-field");
+const results = document.getElementById("results");
+
 document.addEventListener('DOMContentLoaded', function() {
     const config = {
         words: {
@@ -13,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             hard: ["synchronize", "complicated", "development", "extravagant", "misconception"]
         },
         defaultTime: 60,
-        defaultWordCount: 50
+        defaultWordCount: 20
     };
 
     const elements = {

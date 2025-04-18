@@ -5,7 +5,7 @@
 }
 
 body {
-    color: #ffffff;
+    color: #1c2a3a;
     transition: background-color 0.3s, color 0.3s;
     font-family: "Quicksand", sans-serif;
     background-color: #1c2a3a;
@@ -107,6 +107,7 @@ nav{
 .header h1 {
     font-size: 1.8rem;
     font-weight: 600;
+    color: #ffff;
 }
 
 .close-btn {
