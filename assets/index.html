@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Settings</title>
+    <title>Register</title>
 </head>
 <body>
     <nav>
@@ -21,7 +21,7 @@
                 <li><a href="test.html">Test</a></li>
                 <li><a href="setting.html">Settings</a></li>
             </ul>
-
+            
     </nav>
 
     <div class="container">
@@ -50,11 +50,13 @@
     
           <div class="input-group">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" id="password" required />
+            <input type="password" placeholder="Password" id="password" required minlength="8"/>
+            <span class="password-toggle"><i class="fas fa-eye"></i></span>
           </div>
           
-          <button class="btn">Register</button>
+          <button type="submit" class="btn">Register</button>
            <p class="message" id="message"></p>
+           <p class="login-link">Already have an account? <a href="#">Login here</a></p>
         </form>
       </div>
     

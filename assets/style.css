@@ -5,7 +5,7 @@
   }
   
   body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    padding: 0 10%;
+    padding: 0 5%;
     position: fixed;
     top: 0;
     left: 0;
@@ -34,6 +34,8 @@ nav{
 
 .menu{
     display: flex;
+    list-style: none;
+    gap: 1.5rem;
 }
 .logo{
     color: #27ae60;
@@ -129,6 +131,14 @@ nav{
     outline: none;
     background: rgba(255, 255, 255, 0.2);
   }
+
+  .password-toggle {
+    position: absolute;
+    right: 35px;
+    top: 0%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
   
 .btn{
     padding: 1px 2rem;
@@ -138,7 +148,7 @@ nav{
     border-radius: 40px;
     font-size: 30px;
     position: relative;
-    top: 20px;
+    top: 0px;
     border: none;
     cursor: pointer;
 }
@@ -222,4 +232,27 @@ nav{
 .container:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        background-color: #fff;
+        transition: left 0.3s ease;
+    }
+
+    .menu.show {
+        left: 0;
+    }
+
+    .container {
+        padding: 1.5rem;
+        margin-top: 6rem;
+    }
 }

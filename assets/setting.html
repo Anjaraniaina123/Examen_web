@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <title>Settings</title>
+    <title>Setting</title>
 </head>
 <body>
     <nav>
@@ -25,8 +25,8 @@
 
     <div class="container">
         <header class="header">
-            
-            <button class="close-btn">
+            <h1>Settings</h1>
+            <button class="close-btn" onclick="window.history.back()">
                 <i class="fas fa-times"></i>
             </button>
         </header>
@@ -92,19 +92,6 @@
                     </select>
                 </div>
 
-                <div class="setting-item">
-                    <label for="custom-color">Custom color:</label>
-                    <input type="color" id="custom-color" value="#ff5e5e">
-                </div>
-
-                <div class="theme-preview">
-                    <div class="preview-text">
-                        <span class="correct">Are</span>
-                        <span class="incorrect">you</span>
-                        <span class="current">fine</span>
-                        <span>!</span>
-                    </div>
-                </div>
             </div>
 
             <div class="tab-content" id="keyboard">
