@@ -150,7 +150,7 @@ nav{
 }
 
 #word-display .current {
-    background-color: var(--current-color);
+    background-color: #27ae60;
     color: white;
     padding: 0 2px;
     border-radius: 3px;
