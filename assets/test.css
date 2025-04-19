@@ -150,14 +150,12 @@ nav{
 }
 
 #word-display .current {
-    background-color: #27ae60;
-    color: white;
-    padding: 0 2px;
-    border-radius: 3px;
+    background-color: rgba(39, 174, 96, 0.2);
+    border-bottom: 2px solid #27ae60;
 }
 
 #word-display .correct {
-    color: #2196f3;
+    color: #27ae60;
 }
 
 #word-display .incorrect {

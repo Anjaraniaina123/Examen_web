@@ -2,15 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('registerForm');
   const message = document.getElementById('message');
   const passwordInput = document.getElementById('password');
-  const passwordToggle = document.getElementById('.password-toggle i');
+  const passwordToggle = document.querySelector('.password-toggle i');
 
   passwordToggle.addEventListener('click', function() {
     if (passwordInput.type == 'password') {
         passwordInput.type = 'text';
-        passwordToggle.classList.replace('fa-eye-slash', 'fa-eye');
+        passwordToggle.classList.replace('fa-eye', 'fa-eye-slash');
     } else {
         passwordInput.type = 'password';
-        passwordToggle.classList.replace('fa-eye', 'fa-eye-slash')
+        passwordToggle.classList.replace('fa-eye-slash', 'fa-eye')
     }
   });
 
@@ -42,8 +42,19 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(() => window.location.href = "test.html", 1500);
   });
   function showMessage(msg, type) {
+    const message = document.getElementById('message');
     message.textContent = msg;
-    message.style.color = type === 'success' ? 'lightgreen' : '#ff4444';
-    setTimeout(() => message.textContent = '', 3000);
+    message.style.color = type === 'success' ? '#27ae60' : '#f44336';
+    message.style.display = 'block';
+    
+    if (type === 'success') {
+      setTimeout (() => {
+        window.location.href = "test.html";
+      }, 1500);
+    } else {
+      setTimeout(() => {
+        message.style.display = 'none';
+      }, 3000);
+    }
   }
 });
