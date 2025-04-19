@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Test</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p><span>Typing</span>Test</p>
+        </div>
+            <ul class="menu">
+                <li><a href="index.html">Login</a></li>
+                <li><a href="test.html">Test</a></li>
+                <li><a href="setting.html">Settings</a></li>
+            </ul>
+
+    </nav>
+    <div class="test-container">
+        <div class="test-header">
+            <div class="test-controls">
+                <button id="restart-btn" class="btn">Restart</button>
+                <div class="timer" id="timer">60s</div>
+            </div>
+        </div>
+
+        <div class="test-content">
+            <div id="word-display"></div>
+            <div class="input-container">
+                <input type="text" id="input-field" placeholder="Start typing..." autofocus>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            <div class="results" id="results">
+                <div class="result-item">
+                    <span class="result-label">Speed:</span>
+                    <span class="result-value" id="wpm">0</span>
+                    <span class="result-unit">WPM</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Accuracy:</span>
+                    <span class="result-value" id="accuracy">0</span>
+                    <span class="result-unit">%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>

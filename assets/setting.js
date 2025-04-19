@@ -26,24 +26,17 @@ document.addEventListener('DOMContentLoaded', function() {
     customColor.addEventListener('input', updateTheme);
     
     function updateTheme() {
-        const theme = themeSelect.value;
-        
-        if (theme === 'custom') {
-            
+        document.body.removeAttribute('data-theme');
+        if (themeSelect.value === 'dark') {
+            document.body.setAttribute('data-theme', 'dark');
+        } else if (themeSelect.value === 'custom') {
             document.documentElement.style.setProperty('--primary-color', customColor.value);
-        } else {
-            
-            document.documentElement.style.removeProperty('--primary-color');
-            
-            if (theme === 'dark') {
-                body.setAttribute('data-theme', 'dark');
-            } else {
-                body.removeAttribute('data-theme');
-            }
         }
     }
+    themeSelect.addEventListener('change', updateTheme);
+    customColor.addEventListener('input', updateTheme);
     
-    
+
     const volumeSlider = document.getElementById('sound-volume');
     const volumeValue = document.getElementById('volume-value');
     
@@ -56,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     testSoundBtn.addEventListener('click', function() {
 
-        console.log('Son de test joué');
+        console.log(`Test sound at ${volumeSlider.value}% volume`);
     });
     
     
@@ -64,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     closeBtn.addEventListener('click', function() {
 
-        console.log('Fermer les paramètres');
+        console.log('Close setting');
     
     });
     
@@ -89,11 +82,11 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         
         localStorage.setItem('typingGameSettings', JSON.stringify(settings));
-        alert('Paramètres enregistrés avec succès!');
+        alert('Settings saved!', 'success');
     });
     
     resetBtn.addEventListener('click', function() {
-        if (confirm('Êtes-vous sûr de vouloir réinitialiser tous les paramètres?')) {
+        if (confirm('Are you sure to reset your setting?')) {
 
             document.getElementById('language').value = 'french';
             document.getElementById('time-mode').value = '30';
